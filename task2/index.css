@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+
+.list-block__wrapper {
+    padding: 30px;
+    background: rgb(245,245,245);
+}
+
+.list-block__title {
+    margin-bottom: 20px;
+}
+
+.list {
+    max-width: 500px;
+}
+.list-item {
+    background: #A5CCDB;
+    padding: 10px 10px 10px 30px;
+    list-style-type: none;
+}
+.list-item:nth-child(2n) {
+    background: #ADD9E6;
+}
+
+.list-item.checked {
+    background: #E2E2E2;
+}
+
+.list-item__content {
+    display: inline-block;
+    margin-left: 20px;
+}
+.list-item__content:before {
+    content: url("../icons/unchecked_16.png");
+    margin-right: 20px;
+}
+
+.list-item.checked .list-item__content {
+    text-decoration: line-through;
+}
+.list-item.checked .list-item__content:before {
+    content: url("../icons/checked_16.png");
+    margin-right: 20px;
+}
+
+.list-item__cross {
+    font-size: 12px;
+    margin-left: 30px;
+}
+
+
